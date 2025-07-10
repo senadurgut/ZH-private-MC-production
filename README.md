@@ -11,11 +11,11 @@ This is an ongoing work, and it's all for 2016 preVFP for now, next years will b
 ```
 
 Untar,  and update the JHUGen card to match the desired final state.  Use "DecayMode1=10 DecayMode2=5". This will give  Z->all + H->WW->lnuqq, and then we have to apply an LHE filter to select Z->bbar events when interfacing the gridpack to pythia. 
-2. Find fragment 
-Go to MCM (https://cms-pdmv-prod.web.cern.ch/mcm/), find the dataset. The selected dataset is: 
-```
-HIG-RunIISummer20UL16wmLHEGEN-01510
-```
+
+2. Find the fragment
+ 
+Go to MCM (https://cms-pdmv-prod.web.cern.ch/mcm/), find the dataset. The selected dataset in this work is: 'HIG-RunIISummer20UL16wmLHEGEN-01510'
+
 Get the 'setup command' and 'fragment' for this dataset. 
 The setup command for this dataset is saved as 'run_cmsDriver.sh'.
 The fragment is saved as 'HIG-RunIISummer20UL16wmLHEGEN-01510-fragment.py'
