@@ -1,0 +1,14 @@
+executable     = run_cmsrun.sh
+arguments      = $(ClusterId) $(ProcId)
+output         = ZH_mc_logs/job_$(ClusterId)_$(ProcId).out
+error          = ZH_mc_logs/job_$(ClusterId)_$(ProcId).err
+log            = ZH_mc_logs/job_$(ClusterId).log
++JobFlavour    = "workday"
+transfer_input_files = ZH_HToWW_ZTObb_20UL_16_cfg.py, run_cmsrun.sh, HZJ_Hto2Wto2L2Nu_modified.tgz
+when_to_transfer_output = ON_EXIT
+x509userproxy = /uscms/home/sdurgut1/x509_proxy_u13691
+use_x509userproxy = true
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/cmssw/cms:rhel7"
++SingularityBindCVMFS = True
++SingularityShell = "/bin/bash"
+queue
